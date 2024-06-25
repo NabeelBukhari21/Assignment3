@@ -14,7 +14,8 @@
   "dependencies": {
     "autoprefixer": "^10.4.19",
     "express": "^4.19.2",
-    "postcss": "^8.4.38"
+    "postcss": "^8.4.38",
+    "pg": "^8.7.1" 
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",
