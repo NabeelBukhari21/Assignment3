@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="/css/main.css" rel="stylesheet">
+    <!-- Include DaisyUI styles for dropdown -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl text-white font-semibold">LegoLand</h1>
+            <div class="flex space-x-4">
+                <a href="/" class="text-white hover:text-gray-200">Home</a>
+                <a href="/about" class="text-white hover:text-gray-200">About</a>
+                <div class="relative">
+                    <button
+                        class="text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md">
+                        Theme
+                    </button>
+                    <div
+                        class="dropdown-content absolute hidden right-0 bg-white shadow-lg rounded-md mt-2 w-40 overflow-hidden z-10">
+                        <a href="/lego/sets?theme=technic"
+                            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">Technic</a>
+                        <a href="/lego/sets?theme=Service%Packs"
+                            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">Star Wars</a>
+                        <a href="/lego/sets?theme=Supplemental"
+                            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">Supplemental</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto">
+        <div class="py-12">
+            <div class="hero bg-gray-100 p-8 rounded-lg shadow-md">
+                <h1 class="text-4xl font-bold">About</h1>
+                <p class="mt-4 text-lg">Welcome to Legoland, where creativity and imagination come to life through the power of LEGO® bricks. At Legoland, we believe in the endless possibilities of play and learning. Since our founding, we have been dedicated to providing families and LEGO enthusiasts of all ages with unforgettable experiences that inspire, educate, and entertain. : Enjoy special events, shows, and seasonal celebrations that bring LEGO stories to life.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div>
+              <img src="https://www.brickstickershop.com/Files/6/94000/94651/ProductPhotos/278x278/2010197217.jpg" alt="Your Image" class="w-full rounded-lg shadow-md">
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold">What We Offer</h2>
+                <p class="mt-4">Themed Attractions: Explore our themed lands filled with iconic LEGO models and interactive adventures.</p>
+                <p class="mt-4">Educational Experiences: Engage in hands-on learning activities that promote STEM education and creativity.</p>
+                <p class="mt-4">Events and Entertainment: Enjoy special events, shows, and seasonal celebrations that bring LEGO stories to life.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-200 text-center py-4 mt-8">
+        <p>&copy; 2024 LegoLand. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdown = document.querySelector('.relative');
+            dropdown.addEventListener('click', function () {
+                const dropdownContent = document.querySelector('.dropdown-content');
+                dropdownContent.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
